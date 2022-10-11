@@ -75,7 +75,8 @@ namespace WebApi_Dummy.Controllers
             }
         }
 
-        [Route("Reversal/Random")]
+        [AllowAnonymous]
+        [Route("Reversal")]
         [HttpPost]
         public IHttpActionResult ReversalRandom(ReversalModel model)
         {
